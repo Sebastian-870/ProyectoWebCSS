@@ -5,6 +5,7 @@
    --colorTitulos: #282D31;
    --colorParrafos: #53575A;
    --colorSombras: #282D31;
+   --colorBordes: #DFE0E0;
 }
 
 
@@ -160,3 +161,61 @@ header{
     }
 }
 /* Fin de banner */
+
+/* Incio del cards */
+.cards__grid{
+    display: grid;
+    gap: 1.5em;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+.card{
+    background-color: #fff;
+    border-radius: 1.5em;
+    border: 1px solid var(--colorBordes);
+    box-shadow: 0 2px 2px var(--colorSombras);
+}
+.card__img img{
+    max-width: 100%;
+    border-radius: 1em 1em 0 0 ;
+}
+.card__content{
+    padding: 1em;
+    font-weight: 700;
+}
+.card__content a{
+    text-decoration: none;
+}
+.card__title{
+    font-family: 'Poppins';
+    font-size: 1em;
+    text-align: center;
+    color: var(--colorTitulos);
+    text-transform: uppercase;
+}
+.card__info{
+    background-color: var(#fff);
+    color: red;
+    font-size: 1em;
+    padding: 1em;
+    margin-top: 4em;
+    display: block;
+    text-align: center;
+    border-radius: 1em;
+    border: 1px solid var(--colorPrimario);
+    text-decoration: none;
+    font-family: 'Poppins';
+    transition: background-color .5s ease-in-out;
+}
+.card__info:hover{
+    background-color: var(--colorSecundario);
+    color: #fff;
+    border: 1px solid var(--colorSecundario);
+}
+.cards__titulo{
+    text-align: center;
+    margin-top: 2em;
+    font-weight: 700;
+    font-family: 'Poppins';
+}
+
+/* Fin del cards */
