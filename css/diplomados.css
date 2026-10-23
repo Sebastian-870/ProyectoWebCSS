@@ -233,3 +233,27 @@ header{
     padding: 0.2em;
     box-shadow: 0px 0px 6px #000;
 }
+/* INICIO DE FOOTER */
+footer{
+    background-color: var(--colorSombras);
+    color: #fff;
+    padding: 2.5em 0;
+}
+.iconos-pie{
+    font-size: 3em;
+}
+.iconos-pie :hover{
+    color: #EC111A;
+}
+.pie, .info{
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 1em;
+}
+.derechos{
+    background-color: var(--colorParrafos);
+    color: #fff;
+    font-family: 'Poppins';
+    padding: .5em 0;
+}
+/* FIN DE FOTTER */
